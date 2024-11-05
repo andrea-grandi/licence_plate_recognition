@@ -1,13 +1,12 @@
 from ultralytics import YOLO
 import cv2
-
 import util
+import numpy as np
 from sort.sort import *
 from util import get_car, read_license_plate, write_csv
 
 
 results = {}
-
 mot_tracker = Sort()
 
 # load models
